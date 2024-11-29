@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dginwkgue1s0l"]
+
+[ext_resource type="PackedScene" uid="uid://d04b3hrnvp8ac" path="res://assets/Tiktak dziennikarz.glb" id="1_4t3xu"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c142d"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.1, 0, 0, 0, 1, 0, 0, 0, 1.1, 0, 1.07209, 0)
+shape = SubResource("CapsuleShape3D_c142d")
+
+[node name="Tiktak dziennikarz" parent="." instance=ExtResource("1_4t3xu")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, -0.544639, 0.838671, 0, 0.838671, 0.544639, -1, 2.38069e-08, -3.66595e-08, 7.1186, 4.93649, 0)
